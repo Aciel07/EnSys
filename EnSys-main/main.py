@@ -1,6 +1,5 @@
 '''
 This is the main file for the EnSys chatbot. It initializes the Flask app and loads the chatbot with the API key.
-Old model: ft:gpt-3.5-turbo-0125:ensys:restaurant:9IrHirrM 
 '''
 import nltk
 import os
