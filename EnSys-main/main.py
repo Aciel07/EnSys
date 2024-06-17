@@ -2,6 +2,7 @@
 This is the main file for the EnSys chatbot. It initializes the Flask app and loads the chatbot with the API key.
 '''
 import nltk
+nltk.download('stopwords')
 nltk.download('vader_lexicon')
 from flask import Flask
 from routes import initialize_routes
