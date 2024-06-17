@@ -1,0 +1,33 @@
+User: THe food was soo good
+System: I'm glad you enjoyed your meal! What did you have?
+
+--- End of Conversation ---
+
+User: THe food was soo good
+System: I'm glad you enjoyed your meal! What did you have?
+User: I ate lots of pasta
+System: Pasta:
+1. Baked Spaghetti with Cheese Sauce
+2. Seafood Sotanghon
+3. Korean Sotanghon
+4. Shrimp Pecante
+5. Mixed Sausage
+6. Baked Lasagna
+
+--- End of Conversation ---
+
+User: THe food was soo good
+System: I'm glad you enjoyed your meal! What did you have?
+User: I ate lots of pasta
+System: Pasta:
+1. Baked Spaghetti with Cheese Sauce
+2. Seafood Sotanghon
+3. Korean Sotanghon
+4. Shrimp Pecante
+5. Mixed Sausage
+6. Baked Lasagna
+User: I'm so full with the food I ate
+System: I'm sorry, but I couldn't process your request at the moment.
+
+--- End of Conversation ---
+
