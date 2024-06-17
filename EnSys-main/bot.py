@@ -1,7 +1,9 @@
-import os, random
+import os
+import random
 import openai
 import pandas as pd
 from dotenv import load_dotenv
+from langdetect import detect, LangDetectException
 from model import EmotionModel
 from preprocess import TextPreprocessor
 from feedback_analyzer import FeedbackAnalyzer
@@ -53,6 +55,22 @@ class EnSysBot:
     def generate_response(self, prompt):
         # Add the user's message to the conversation
         self.add_user_message(prompt)
+
+        # Detect language
+        try:
+            language = detect(prompt)
+            if language != 'en':
+                response = f"I currently understand English and don't know other languages yet."
+                self.add_system_message(response)
+                self.save_chat_history()  # Save the chat history
+                print("Bot:", response)
+                return response
+        except LangDetectException:
+            response = "I'm having trouble understanding the language. Could you please communicate in English?"
+            self.add_system_message(response)
+            self.save_chat_history()  # Save the chat history
+            print("Bot:", response)
+            return response
 
         # Preprocess the user's prompt
         preprocessed_prompt = self.preprocessor.preprocess(prompt)
@@ -252,7 +270,6 @@ class EnSysBot:
         self.save_chat_history()  # Save the chat history
         print("Bot:", response)
         return response
-
 
     def get_restaurant_profile_response(self, sentiment):
         if not self.restaurant_data.empty:
