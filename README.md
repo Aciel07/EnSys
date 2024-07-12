@@ -1,5 +1,6 @@
 # EnSys
-This project involves the development and integration of an empathic AI chatbot, named "EnSys," specifically designed for the food services industry. Aiming to enhance customer interactions by effectively understanding and responding to human emotions using advanced NLP techniques.
+  - This project involves the development and integration of an empathic AI chatbot, named "EnSys," specifically designed for the food services industry.
+  - Aiming to enhance customer interactions by effectively understanding and responding to human emotions using advanced NLP techniques.
 
 **Features**
   1. Emotion-Based Interaction: Users select their emotional state (happy, neutral, sad) and provide feedback.
