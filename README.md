@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b4083644-4330-4e4a-abff-3f9d321272f8)# EnSys
+# EnSys
   - This project involves the development and integration of an empathic AI chatbot, named "EnSys," specifically designed for the food services industry.
   - Aiming to enhance customer interactions by effectively understanding and responding to human emotions using advanced NLP techniques.
 
