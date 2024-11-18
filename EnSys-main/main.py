@@ -1,7 +1,7 @@
 import nltk
 import os
 nltk.download('stopwords')
-nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('vader_lexicon')
 nltk.download('wordnet')
 from flask import Flask
